@@ -1,0 +1,108 @@
+.mappedContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 34px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+.name {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 1.36364px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.sircle {
+  height: 20px;
+  width: 20px;
+
+  border-radius: 50%;
+}
+.splitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.title {
+  display: none;
+}
+@media only screen and (min-width: 720px) {
+  .mappedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 34px;
+    cursor: pointer;
+    border-bottom: none;
+  }
+  .parent {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  }
+  .sircle {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .name {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    /* identical to box height, or 227% */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  .splitter {
+    gap: 33px;
+    margin-bottom: 27px;
+  }
+  .title {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .title {
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    position: absolute;
+    height: 36px;
+    width: 109px;
+    left: 32px;
+    top: 12px;
+    border-radius: nullpx;
+    display: block;
+  }
+  .parent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

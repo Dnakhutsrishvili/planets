@@ -1,0 +1,54 @@
+.HeaderParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.title {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin: 0;
+}
+.bulk {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 720px) {
+  .bulker {
+    display: none;
+  }
+  .title {
+    text-align: center;
+    margin-top: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .HeaderParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .title {
+    display: none;
+  }
+  .HeaderParent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: none;
+  }
+}

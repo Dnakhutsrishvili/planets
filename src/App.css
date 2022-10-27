@@ -23,7 +23,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+body {
+  background-image: url(./Assets/img/background-stars.svg);
+  background-color: #070724;
+}
+html {
+  font-size: 10px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -34,5 +40,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  html {
+    font-size: 16px;
   }
 }
